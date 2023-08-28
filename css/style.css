@@ -1,0 +1,628 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+}
+
+/*start home*/
+.navbar-nav{
+  padding-left: 380px;
+  
+}
+.navbar-toggler{
+    color: #fff;
+    background-color: #fff;
+}
+
+.navbar-collapse a{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-link {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #ffffff !important;
+    position: relative;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 10px;
+    transition: all 1s;
+}
+
+.nav-item:hover .nav-link::after {
+    width: 70%;
+}
+.navbar-brand{
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 30px;
+   
+    
+}
+.navbar{
+    background-color: #181818 !important;
+    z-index: 1000;
+    
+}
+
+.home{
+    background-image: url(../image/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.layer{
+    background-color: rgba(10, 10, 10, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.home-text{
+    z-index: 1231;
+}
+.home-caption .home-text p{
+    color: #ffffff !important;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.home-text h4{
+    text-align: center;
+    font-size: 40px;
+}
+
+.home-text h4::after{
+    content:"";
+    position: relative;
+    color: #fff !important;
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    left:2px;
+     
+        
+}
+
+@keyframes typing{
+    0%{content:"D|"}
+    1%{content:"Di|"}
+    2% {content:"Dis|"}
+    3%{content:"Disi|"}
+    4%{content:"Disig|"}
+    5%{content:"Disign|"}
+    6%{content:"Disigne|"}
+    7%{content:"Disigner|"}
+    9%{content:"Disigne|"}
+    11%{content:"Disign|"}
+    13%{content:"Disig|"}
+    15%{content:"Disi|"}
+    17%{content:"Dis|"}
+    19%{content:"Di|"}
+    21%{content:"D|"}
+    23%{content:"|"}
+    25%{content:"D|"}
+    27%{content:"Di|"}
+    29%{content:"Dis|"}
+    31%{content:"Disi|"}
+    33%{content:"Disig|"}
+    35%{content:"Disign|"}
+    37%{content:"Disigne|"}
+    39%{content:"Disigner|"}
+    41%{content:"Disigne|"}
+    43%{content:"D|"}
+    45%{content:"De|"}
+    47% {content:"Deve|"}
+    49%{content:"Devel|"}
+    51%{content:"Develo|"}
+    53%{content:"Develop|"}
+    55%{content:"Developr|"}
+    57%{content:"Developr|"}
+    59%{content:"Develop|"}
+    61%{content:"Develo|"}
+    63%{content:"Devel|"}
+    65%{content:"Deve|"}
+    67%{content:"Dev|"}
+    69%{content:"De|"}
+    71%{content:"D|"}
+    73%{content:"|"}
+    75%{content:"f|"}
+    77%{content:"fr|"}
+    79% {content:"fre|"}
+    81%{content:"free|"}
+    82%{content:"freel|"}
+    83%{content:"freela|"}
+    85%{content:"feelan|"}
+    87%{content:"freelanc|"}
+    88%{content:"freelance|"}
+    89%{content:"freelancer|"}
+    90%{content:"freelancer|"}
+    91%{content:"freelance|"}
+    92%{content:"freelanc|"}
+    93%{content:"freelan|"}
+    94%{content:"freela|"}
+    95%{content:"freel|"}
+    96%{content:"free|"}
+    97%{content:"fre|"}
+    98%{content:"fr|"}
+    99%{content:"f|"}
+    100%{content:"|"}
+   
+}
+/*end home*/
+
+/* start about */
+
+.about-1{
+    border-radius: 9px;
+}
+.about-head img{
+    border-radius: 6px;
+}
+.about-head-span{
+    padding-left: 30px;
+}
+.about-head-span span{
+    color: #676767;
+}
+.about-head-span p{
+    font-weight: 600;
+}
+
+.subject{
+    font-size: 18px;
+    font-weight: thin;
+    color: #808080;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+.progreesp-bar{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.progreesp-bar::after{
+    position: absolute;
+    content: attr(value);
+    top: -35px;
+    right: 0;
+    color: #808080;
+    font-size: 18px;
+
+}
+
+.progreesp-line{
+    position: absolute;
+    width:0;
+    height: 7px;
+    background-color: #0078FF;
+    border-radius: 15px;
+    top: -1px;
+
+    animation: animate 1.5s  cubic-bezier(1, 0.2,0.2,1) forwards;
+}
+
+@keyframes animate{
+    100%{
+        width: 100%;
+    }
+}
+
+.skills .container button{
+    color: #666;
+    background-color: transparent;
+    border-radius: 50px ;
+    padding: 10px 10px 10px 10px;
+    margin-left: 500px;
+    font-family: sans-serif;
+    border: 1px solid #666;
+    transition: all 1s;
+    
+}
+
+.about-left{
+    line-height: 30px;
+    font-size: 1.19rem;
+    font-weight: 200;
+    color: #4e4e4e;
+}
+/* end about */
+
+
+/*start services*/
+
+.services-head h1{
+    color: 1e1e1e;
+    font-weight: bold;
+}
+
+.services-head p{
+    color: #4e4e4e;
+    
+}
+
+.after{
+    width: 50px;
+    height: 5px;
+    background-color: #0078FF;
+   margin: auto;
+}
+
+.card{
+    border-radius: 8px;
+}
+.card-icon i{
+    font-size: 60px;
+    border: 8px solid #0078FF;
+    border-radius: 50%;
+    padding: 19px 19px;
+    transition: all 1s;
+}
+.card:hover i{
+    background-color: #0078FF;
+    color: #ffffff;
+    border: 8px solid #0dcaf0;
+}
+
+.card-text{
+    line-height: 30px;
+}
+/*end services*/
+
+
+/*start layer blue*/
+
+.stats-counter {
+   background-image: url(../image/counters-bg.jpg);
+    background-size: 100% 100%;
+    padding: 100px 0;
+    position: relative;
+  }
+  
+  @media (min-width: 1365px) {
+    .stats-counter {
+      background-attachment: fixed;
+    }
+  }
+  
+  .stats-counter .stats-item {
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .stats-counter .stats-item span {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .stats-counter .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+.cmo{
+    background-color: rgba(0, 120, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stats-counter i{
+    font-size:40px;
+    color: #ffffff;
+    border: 8px solid #ffffff;
+    padding: 15px 15px ;
+    border-radius: 50%;
+}
+/*end layer blue*/
+
+/*start portflio*/
+ .portfolio-head p{
+    color: #676767;
+ }
+
+ .portfolio-caption .left p{
+    color: #0078FF;
+ }
+
+ .portfolio-caption{
+    justify-content: space-between;
+ }
+ .span{
+    color: #676767;
+ }
+.portfolio-span i{
+    font-size:20px;
+    background-color: #0078FF;
+    color: #ffffff;
+    padding: 13px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.portfolio-img img{
+    transition: all 1s ;
+    
+}
+.portfolio-card{
+    overflow: hidden;
+
+    border-radius: 6px;
+}
+.portfolio-card:hover .portfolio-img img{
+    transform: scale(1.5);
+    
+}
+
+
+ 
+/*end portflio*/
+
+
+/*start blog*/
+.blog{
+    width: 100%;
+    tr
+}
+
+.blog-head p{
+    color: #676767;
+}
+
+.blog-caption h6{
+    color: #ffffff;
+    background-color: #0078FF;
+    font-size: 18px ;
+    border-radius: 6px;
+}
+.blog-caption h4{
+    font-weight: 500;
+    color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.blog-caption h4:hover{
+    color: #0078FF;
+}
+
+
+.blog-caption p{
+    color: #4e4e4e;
+}
+
+.blog-footer img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.blog-left{
+    margin-left: 110px;
+}
+
+.blog-card{
+    border-radius: 6px;
+}
+
+
+.blog-footer{
+    justify-content: center;
+}
+/*end blog*/
+
+/*end carousel*/
+
+#testimonial{
+    background-image: url(../image/overlay-bg.jpg);
+    background-size: 100% 100% ;
+    background-attachment: fixed;
+    margin-top: 50px;
+}
+#testimonial .carousel-layer{
+    background-color: rgba(0, 120, 255, 0.7);
+}
+.carousel-indicators{
+    top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.carousel-content p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/*end carousel*/
+
+
+/*start contact*/
+
+.contact{
+    background-image: url(../image/overlay-bg.jpg);
+    background-size: 100% 100%;
+}
+
+.layar{
+    background-color: rgba(0, 120, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contact .container {
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+.contact-button button{
+    border-radius: 25px;
+    font-size: 20px;
+    border: 5px solid #0078FF;
+    transition: all 1s ease-in-out;
+}
+
+.contact-button button:hover{
+    background-color: #469bfd;
+    border: 5px solid #0dcaf0;
+    transform: scale(1.1);
+}
+
+.contact-left p{
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.contact-icon i{
+    line-height: 30px;
+    color: #0078FF;
+}
+
+.contact-icon-left a i{
+    font-size: 20px;
+    border: 3px solid #40d5f3;
+    padding: 13px 13px ;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease-in-out;
+    
+}
+.contact-icon-left a i:hover{
+    background-color: #0078FF ;
+    color: #fff ;
+}
+/*end contact*/
+
+
+
+/* start footer */
+
+footer{
+    background-color: #0062d3;
+    color: #ffffff;
+}
+footer p span{
+    font-weight: 900;
+}
+/* end footer */
+
+
+@media screen and  (max-width:1115px){
+     
+   .about-left p{
+    line-height: 25px;
+    font-size: 1.15rem;
+   }
+ 
+
+}
+@media screen and  (max-width:643px){
+     
+    .home-caption .home-text p{
+        font-size: 50px;
+    }
+    
+    .home-text h4{
+        text-align: center;
+        font-size: 30px;
+    }
+ 
+
+}
+@media screen and  (max-width:604px){
+     
+    .about-left p{
+        font-size: 1.0rem;
+    }
+   
+ 
+
+}
+@media screen and  (max-width:547px){
+     
+    .home-caption .home-text p{
+        font-size: 40px;
+    }
+    
+    .home-text h4{
+        text-align: center;
+        font-size: 25px;
+    }
+ 
+
+}
+@media screen and  (max-width:422px){
+     
+ 
+    .about-head{
+        font-size: 14px;
+    }
+ 
+
+}
+@media screen and  (max-width:396px){
+     
+    .home-caption .home-text p{
+        font-size: 30px;
+    }
+    
+    .home-text h4{
+        text-align: center;
+        font-size:19px;
+    }
+ 
+
+}
+
+
+@media screen and  (min-width:768px),(max-width:991){
+
+    .portfolio-caption .left{
+        font-size: 15px;
+    }
+
+}
+     
+    
+
